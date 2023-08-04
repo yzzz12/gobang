@@ -1,0 +1,71 @@
+
+.chessboard{
+    height: 800px;
+    width: 800px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    /* transform: translateX(-10px); */
+  }
+  
+  
+  /* .chessboard-row:first-child .chessboard-cell{
+    border: none;
+    background-color: none;
+  }
+  .chessboard-col:first-child .chessboard-cell{
+    border: none;
+  } */
+  /* .chessboard-row{
+    position: relative;
+  } */
+.chessboard-cell{
+    /* border: 1px solid rgb(131, 130, 130,0.1); */
+    width: 44px;
+    height: 44px;
+    /* display: flex; */
+    /* align-items: flex-end;
+    justify-content: flex-end;
+    box-sizing: border-box; */
+    /* z-index: 999; */
+    /* background-color:rgba(165, 92, 92, 0.5); */
+    /* float:left; */
+  margin-left:6px;
+  margin-top:6px;
+    /* background-color: #FFF5E9; */
+    /* position: absolute; */
+  }
+
+.chessboard-cell-black {
+  width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-left:6px;
+    margin-top:6px;
+    background: radial-gradient(43.18% 43.18% at 34.09% 35.8%, #787878 0%, #020202 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+
+    box-shadow: -3px -3.5px 4px 0px rgba(150, 150, 150, 0.32) inset;
+
+    box-shadow: -0.5px -0.5px 2.5px 0px rgba(0, 0, 0, 0.25) inset;
+
+    box-shadow: 0.5px 0.5px 2px 0px rgba(255, 255, 255, 0.7);
+}
+
+.chessboard-cell-white {
+  width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-left:6px;
+    margin-top:6px;
+    background: radial-gradient(56.25% 56.25% at 34.09% 35.8%, #FFFFFF 0%, #D0D0D0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: -3px -3.5px 4px 0px rgba(255, 255, 255, 0.32) inset;
+
+    box-shadow: -0.5px -0.5px 2.5px 0px rgba(133, 133, 133, 0.25) inset;
+    
+    box-shadow: 0.5px 0.5px 2px 0px rgba(255, 255, 255, 0.7);
+}
