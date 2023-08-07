@@ -6,15 +6,6 @@ type props = {
   handleChange:(h:Ihistory)=>void
 }
 export default function History({history,handleChange}:props) {
-  // function change(e:any){
-  //   // console.log(e);
-    
-  //   // console.log(history);
-  //   // console.log(e.currentTarget.getAttribute('data-h'));
-    
-  //   // handleChange()
-    
-  // }
   return (
     <>
       <div className='history'>
@@ -23,12 +14,9 @@ export default function History({history,handleChange}:props) {
             history.map((h,index) => <div className='status' key={index} onClick={()=>{handleChange(h);
             }} >
               {`棋盘${index+1}`}
-
             </div>)
-          }
-       
+          }      
       </div>
     </>
-
   )
 }

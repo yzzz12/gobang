@@ -3,8 +3,8 @@ import '../style/Control.css'
 type props = {
   ctrl:{
     play:boolean,
-        store:boolean,
-        withdraw:boolean
+    store:boolean,
+    withdraw:boolean
   }
   handlePlay: ()=> void
   handleWithdraw: ()=> void
@@ -12,9 +12,8 @@ type props = {
 }
 export default function Button({ctrl,handlePlay,handleWithdraw,handleStore}:props) {
   let [reset,setReset] = useState(true)
-  function play(e:any){
-    setReset(false)
-    
+  function play(){
+    setReset(false)  
     handlePlay()
   }
   function withdraw(){
